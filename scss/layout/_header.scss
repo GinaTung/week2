@@ -38,6 +38,7 @@
   cursor: pointer;
   background-color: #fff;
   border: 0;
+  margin-right: 12px;
 }
 
 .hamburger {
@@ -45,6 +46,9 @@
   justify-content: space-between;
   position: relative;
   padding: 8px 0;
+  .logo {
+    margin-left: 12px;
+  }
   .hamburger-list {
     text-align: center;
     padding: 40px 0;

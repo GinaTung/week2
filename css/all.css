@@ -276,6 +276,7 @@ h5 {
   cursor: pointer;
   background-color: #fff;
   border: 0;
+  margin-right: 12px;
 }
 
 .hamburger {
@@ -287,6 +288,10 @@ h5 {
           justify-content: space-between;
   position: relative;
   padding: 8px 0;
+}
+
+.hamburger .logo {
+  margin-left: 12px;
 }
 
 .hamburger .hamburger-list {

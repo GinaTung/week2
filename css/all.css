@@ -522,6 +522,10 @@ footer .btn:hover a, footer .active a {
   overflow-x: auto;
 }
 
+.sidebar-auto .menu::-webkit-scrollbar {
+  display: none;
+}
+
 .sidebar-auto .menu .menu-link {
   margin-right: 32px;
   padding: 12px 0 16px;
@@ -700,6 +704,14 @@ footer .btn:hover a, footer .active a {
           align-items: center;
   gap: 0 16px;
   margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .article-list article .header-tag {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .article-list article .header-tag .tag {

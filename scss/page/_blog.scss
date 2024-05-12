@@ -28,9 +28,9 @@
     display: flex;
     white-space: nowrap;
     overflow-x: auto;
-  //   &::-webkit-scrollbar{
-  //     display: none;
-  // }
+    &::-webkit-scrollbar{
+      display: none;
+  }
     .menu-link {
       margin-right: 32px;
       padding: 12px 0 16px;
@@ -140,6 +140,9 @@
     align-items: center;
     gap: 0 16px;
     margin-bottom: $spacer-4;
+    @include container-md {
+      justify-content: space-between;
+    }
     .tag {
       background: $primary-200;
       padding: 4px 12px;

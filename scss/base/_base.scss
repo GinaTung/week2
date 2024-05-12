@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,*::after*::before{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    color: $primary-900;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1296px;
+    padding: 0 12px;
+}
+p{
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: $primary-900;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     object-fit: cover;
+}

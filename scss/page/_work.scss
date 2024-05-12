@@ -1,0 +1,193 @@
+.work-banner {
+  background: $primary-100;
+  .d-lg-block {
+    @include container-lg {
+      display: none;
+    }
+  }
+  .d-lg-none {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+  .banner-content {
+    padding: 80px 0px;
+    @include container-lg {
+      padding: 40px 0 80px;
+    }
+
+    .banner-slogan {
+      margin-bottom: 24px;
+      padding: 59px 71px;
+      position: relative;
+      @include container-lg {
+        padding: 64px 0 40px;
+      }
+      .quote-left {
+        position: absolute;
+        top: -1px;
+        left: 24%;
+        @include container-xl {
+          left: 21%;
+        }
+        @include container-lg {
+          left: 46%;
+          width: 64px;
+          height: 64px;
+        }
+        @include container-xm {
+            left: 40%;
+          }
+      }
+      .quote-right {
+        position: absolute;
+        right: 24%;
+      }
+      p {
+        text-align: center;
+        line-height: 1.2;
+        color: $primary-800;
+        position: relative;
+        .p-mark {
+          position: absolute;
+          right: 25%;
+          @include container-xl {
+            right: 22%;
+          }
+          @include container-lg {
+            top:45px;
+            left: 45%;
+            right: 0;
+          }
+          @include container-xm {
+            left: 40%;
+          }
+        }
+        .p-mark-2 {
+          position: absolute;
+          right: 28%;
+          @include container-xl {
+            right: 25%;
+          }
+          @include container-lg {
+            top:45px;
+            left: 45%;
+            right: 0;
+          }
+          @include container-xm {
+            left: 40%;
+          }
+        }
+      }
+    }
+  }
+  .banner-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 0 40px;
+    @include container-lg {
+      align-items: center;
+      flex-direction: column;
+      gap: 0;
+    }
+    li {
+      width: 298px;
+      position: relative;
+      @include container-lg {
+        margin-bottom: 20px;
+      }
+      h6 {
+        color: $primary-600;
+        &::before {
+          content: "";
+          border-bottom: 2px solid $primary-400;
+          z-index: 2;
+          top: 25px;
+          left: 46%;
+          width: 24px;
+          position: absolute;
+        }
+      }
+      p {
+        text-align: center;
+        color: $primary-700;
+      }
+    }
+  }
+}
+
+.work-section {
+  padding-top: 120px;
+  @include container-lg {
+    padding-top: 80px;
+  }
+}
+.work {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
+  @include container-lg {
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-bottom: 8px;
+    @include container-lg {
+      font-size: 20px;
+    }
+  }
+  .card {
+    width: calc(50% - 12px);
+    margin-bottom: 80px;
+    @include container-lg {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+    img {
+      border: 1px solid #f1f1f1;
+      border-right: 8px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+    }
+  }
+  .card-list {
+    padding: 0 16px;
+    p {
+      color: #919191;
+      margin-bottom: 24px;
+    }
+  }
+  .card-tag {
+    display: flex;
+    gap: 0 16px;
+    @include container-lg {
+      gap: 0 8px;
+    }
+    li {
+      padding: 4px 12px;
+      border-radius: 16px;
+      background: #f1f1f1;
+      text-align: center;
+    }
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0 16px;
+  margin-bottom: 120px;
+  @include container-lg {
+    margin-bottom: 80px;
+  }
+  .active {
+    background: #000;
+    color: #fff;
+  }
+  li a {
+    padding: 2px 13px;
+  }
+}

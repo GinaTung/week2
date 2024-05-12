@@ -1,0 +1,47 @@
+.banner-content h2 {
+  position: relative;
+  .line1 {
+    position: absolute;
+    top: 50%;
+    width: 100px; /* 調整水平線的長度 */
+    border-top: 1px solid $primary-400; /* 水平線的樣式 */
+    left: -90px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px; /* 圓圈的寬度 */
+      height: 6px; /* 圓圈的高度 */
+      border-radius: 50%; /* 使其變成圓形 */
+      background-color: $primary-400; /* 圓圈的顏色 */
+      left: -1px; /* 調整圓圈的位置 */
+    }
+    @include container-lg {
+        left: -35px;
+      width: 50px;
+    }
+  }
+  .line2 {
+    position: absolute;
+    top: 50%;
+    width: 100px; /* 調整水平線的長度 */
+    border-top: 1px solid $primary-400; /* 水平線的樣式 */
+    right: -90px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px; /* 圓圈的寬度 */
+      height: 6px; /* 圓圈的高度 */
+      border-radius: 50%; /* 使其變成圓形 */
+      background-color: $primary-400; /* 圓圈的顏色 */
+      right: -1px; /* 調整圓圈的位置 */
+    }
+    @include container-lg {
+        right: -30px;
+      width: 50px;
+    }
+  }
+}

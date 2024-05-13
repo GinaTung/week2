@@ -20,9 +20,6 @@
   p {
     margin: 0 32px 0 0;
   }
-  .border-bottom {
-    border-bottom: 2px solid $primary-800;
-  }
   .menu {
     top:50px;
     display: flex;
@@ -36,9 +33,6 @@
       padding: 12px 0 16px;
       a {
         padding: 8px 0 8px;
-        &:hover {
-          font-weight: 600;
-        }
       }
     }
   }
@@ -94,9 +88,6 @@
         font-size: $fs-6;
       }
     }
-    .border-bottom {
-      border-bottom: 2px solid $primary-800;
-    }
     .menu-link {
       margin-right: 32px;
       margin-bottom: 32px;
@@ -107,9 +98,6 @@
         font-size: 20px;
         @include container-md {
           font-size: 16px;
-        }
-        &:hover {
-          font-weight: 600;
         }
       }
     }
@@ -149,4 +137,7 @@
       border-radius: 16px;
     }
   }
+}
+.border-bottom {
+  border-bottom: 2px solid $primary-800;
 }

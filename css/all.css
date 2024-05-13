@@ -271,6 +271,7 @@ h5 {
 }
 
 .hamburger-btn {
+  padding: 0;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -509,10 +510,6 @@ footer .btn:hover a, footer .active a {
   margin: 0 32px 0 0;
 }
 
-.sidebar-auto .border-bottom {
-  border-bottom: 2px solid #1E1E1E;
-}
-
 .sidebar-auto .menu {
   top: 50px;
   display: -webkit-box;
@@ -533,10 +530,6 @@ footer .btn:hover a, footer .active a {
 
 .sidebar-auto .menu .menu-link a {
   padding: 8px 0 8px;
-}
-
-.sidebar-auto .menu .menu-link a:hover {
-  font-weight: 600;
 }
 
 .article {
@@ -630,10 +623,6 @@ footer .btn:hover a, footer .active a {
   }
 }
 
-.article .sidebar .border-bottom {
-  border-bottom: 2px solid #1E1E1E;
-}
-
 .article .sidebar .menu-link {
   margin-right: 32px;
   margin-bottom: 32px;
@@ -653,10 +642,6 @@ footer .btn:hover a, footer .active a {
   .article .sidebar .menu-link a {
     font-size: 16px;
   }
-}
-
-.article .sidebar .menu-link a:hover {
-  font-weight: 600;
 }
 
 .article-list article {
@@ -718,6 +703,10 @@ footer .btn:hover a, footer .active a {
   background: #F1F1F1;
   padding: 4px 12px;
   border-radius: 16px;
+}
+
+.border-bottom {
+  border-bottom: 2px solid #1E1E1E;
 }
 
 .work-banner {

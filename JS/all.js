@@ -4,8 +4,8 @@ $(".hamburger-btn").click(function () {
   $(".closure").toggleClass("close");
   $(".hamburger-list").toggleClass("close");
 });
-// $('span').addClass('orange');
 
-$(".sidebar-auto-menu").click(function () {
-    $(".menu-link").slideDown();
-  });
+
+// $(".sidebar-auto-menu").click(function () {
+//     $(".menu-link").slideDown(3000);
+//   });

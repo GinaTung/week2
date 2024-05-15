@@ -96,6 +96,7 @@
       }
       a {
         font-size: 20px;
+        display: inline-block;
         @include container-md {
           font-size: 16px;
         }

@@ -1,0 +1,101 @@
+.home-banner-bg {
+  background-image: url("../img/hero-lg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+}
+.home-banner-content {
+  padding: 248px 24px 248px 0;
+  width: 430px;
+}
+.icon-list {
+  display: flex;
+}
+.work-introduction {
+  padding-top: 120px;
+  .work-intro-first-bg {
+    background-image: url("../img/homepage-work1-bg.png");
+    padding-top: 80px;
+  }
+  
+  .work-intro-second-bg {
+    background-image: url("../img/homepage-work2-lg.png");
+    position: relative;
+    max-width: 100%;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%; 
+      height: 100%;
+      background-color: rgba(10, 16, 19,0.5); 
+      z-index: 1; 
+      pointer-events: none; 
+    }
+  }
+  .work-intro-third-bg {
+    background-image: url("../img/homepage-work3-bg.png");
+    position: relative;
+    max-width: 100%;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; 
+      height: 100%;
+      background-color: rgba(10, 16, 19,0.5); 
+      z-index: 1; 
+      pointer-events: none; 
+    }
+  }
+  .work-intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.py-50 {
+  padding: 200px 0;
+}
+.my-50 {
+  margin: 200px 0;
+}
+.z-index-top {
+  z-index:99;
+}
+
+.service-items {
+  padding: 120px 0;
+  background-image: url("../img/homepage-services-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .service-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 24px;
+    .service-item-first {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../img/service-item-bg.png');
+      width: 306px;
+      height: 306px;
+      border-radius: 16px;
+      .service-item-visual {
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      p{
+        color: $primary-700;
+      }
+    }
+  }
+
+}

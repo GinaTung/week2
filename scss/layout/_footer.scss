@@ -12,6 +12,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0;
         @include container-md {
             flex-direction: column;
            }
@@ -38,7 +39,7 @@ footer {
     .border-1-primary-400 {
         border: 1px solid $primary-400;
     } 
-    .btn:hover, .active{
+    .footer-btn:hover, .active{
         background: $primary-900;
         a{
             color: #fff;

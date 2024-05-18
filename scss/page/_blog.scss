@@ -48,14 +48,20 @@
     margin-bottom: 80px;
   }
   .article-list {
-    width: calc(76.39% - 24px);
+    width: calc(75.46% - 12px);
     @include container-lg {
       width: 100%;
       order: 2;
     }
+    img {
+      width: 306px;
+      @include container-lg {
+        width: 100%;
+      }
+    }
   }
   .sidebar {
-    width: calc(23.61% - 80px);
+    width: calc(24.54% - 12px);
     padding-top: 80px;
     padding-left: 80px;
     background: $primary-100;

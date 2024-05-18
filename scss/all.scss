@@ -3,7 +3,7 @@
 @import './abstracts/_mixin';
 
 @import './base/_base';
-@import './base/_fontStyle';
+@import './base/__typography';
 @import './base//_spacer';
 
 
@@ -11,6 +11,10 @@
 @import './layout/_footer';
 
 @import './components/_line';
+@import './components/_card';
+@import './components/_headerTitle';
+@import './components/_button.scss';
 
+@import './page/_index';
 @import './page/_blog';
 @import './page/_work';

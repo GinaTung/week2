@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>體驗營部落格</title>
     <link rel="stylesheet" href="./css/all.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <div class="container">
@@ -42,39 +45,180 @@
         </ul>
       </nav>
     </header>
-    <main class="mb-20 container">
-      <h2>首頁</h2>
+    <main>
+      <div class="home-banner-bg">
+        <div class="container">
+          <section class="home-banner-content">
+            <h2 class="fs-1 mb-6">Hi！我是 Noel</h2>
+            <div class="mb-4">
+              <p class="fs-5 mb-2">
+                具有 10 年經驗的 資深 UI 設計師 兼 前端工程師
+              </p>
+              <p class="fs-5">技術雙修並行，熱衷於優化使用者的網頁體驗</p>
+            </div>
+            <p class="fs-6 mb-15">
+              WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN
+            </p>
+            <ul class="icon-list">
+              <li>
+                <a href="#">
+                  <img src="./img/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/youtube.svg" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <section class="work-introduction">
+        <header class="header-title">
+          <div class="title-deco-left"></div>
+          <h2 class="letter-spacing">作品介紹</h2>
+          <div class="title-deco-right"></div>
+        </header>
+        <div class="work-intro-first-bg">
+          <div class="container">
+            <div class="work-intro-content">
+              <img src="./img/homepage-work1.png" alt="星際旅行訂票平台" />
+              <div class="card-list-bg-op">
+                <h3 class="mb-2">星際旅行訂票平台</h3>
+                <p class="mb-6">悠遊宇宙的夢想，從這裡開始實現</p>
+                <ul class="card-tag mb-10">
+                  <li>網頁設計</li>
+                  <li>響應式設計</li>
+                  <li>Bootstrap</li>
+                </ul>
+                <a class="btn btn-md fw-bold" href="#">完整介紹<img src="./img/Vector.png" alt="arrow"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-intro-second-bg">
+          <div class="mask"></div>
+          <div class="container">
+            <div class="work-intro-content py-50">
+              <div class="card-list-bg-op">
+                <h3 class="mb-2">理財App</h3>
+                <p class="mb-6">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+                <ul class="card-tag mb-10">
+                  <li>APP設計</li>
+                  <li>iOS</li>
+                  <li>React</li>
+                </ul>
+                <a class="btn btn-md fw-bold" href="#">完整介紹<img src="./img/Vector.png" alt="arrow"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-intro-third-bg">
+          <div class="container">
+            <div class="work-intro-content">
+              <img src="./img/homepage-work3.png" class="z-index-top" alt="醫美診所官網" />
+              <div class="card-list-bg-op my-50">
+                <h3 class="mb-2">醫美診所官網</h3>
+                <p class="mb-6">永保青春的秘密，從粹究開始</p>
+                <ul class="card-tag mb-10">
+                  <li>網頁設計</li>
+                  <li>響應式設計</li>
+                  <li>WordPress</li>
+                </ul>
+                <a class="btn btn-md fw-bold" href="#">完整介紹<img src="./img/Vector.png" alt="arrow"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-items container">
+        <header class="header-title">
+          <div class="title-deco-left"></div>
+          <h2 class="letter-spacing">服務項目</h2>
+          <div class="title-deco-right"></div>
+        </header>
+        <ul class="service-content mb-20">
+          <li class="service-item-first">
+            <div class="service-item-visual">
+              <img src="./img/service-item-visual.png" alt="service-item-visual" class="mb-6">
+              <h3>平面設計</h3>
+            </div>
+          </li>
+          <li class="service-item-first">
+            <div class="service-item-visual">
+              <img src="./img/service-item-ui.png" alt="service-item-ui" class="mb-6">
+              <h3>UI 設計</h3>
+            </div>
+          </li>
+          <li class="service-item-first">
+            <div class="service-item-visual">
+              <img src="./img/service-item-html&css.png" alt="service-item-html&css" class="mb-6">
+              <h3>切版服務</h3>
+            </div>
+          </li>
+          <li class="service-item-first">
+            <div class="service-item-visual">
+              <img src="./img/service-item-front-end.png" alt="service-item-front-end" class="mb-6">
+              <h3>前端開發</h3>
+            </div>
+          </li>
+        </ul>
+        <p class="fs-3 mb-10 text-center fw-semi-bold">想要合作或瞭解更多?</p>
+        <a class="btn btn-lg fw-semi-bold" href="#">詳細內容與合作流程<img src="./img/Vector.png" alt="arrow"></a>
+      </section>
+      <section class="article-items container">
+        <header class="header-title">
+          <div class="title-deco-left"></div>
+          <h2 class="letter-spacing">精選文章</h2>
+          <div class="title-deco-right"></div>
+        </header>
+      </section>
     </main>
     <footer>
       <div class="container">
         <header>
           <a href="index.html"><img src="./img/logo.svg" alt="Noel.logo" /></a>
-          <p class="fs-5">若有數位產品設計和開發相關問題<br>歡迎填寫表單，或直接與我聯絡！</p>
-          <a href="mailto:service@hexschool.com" class="text-primary-500">service@hexschool.com</a>
+          <p class="fs-5">
+            若有數位產品設計和開發相關問題<br />歡迎填寫表單，或直接與我聯絡！
+          </p>
+          <a href="mailto:service@hexschool.com" class="text-primary-500"
+            >service@hexschool.com</a
+          >
         </header>
         <ul class="footer-sociality">
-          <li class="border-1-primary-400 mb-6 btn active">
+          <li class="border-1-primary-400 mb-6 footer-btn active">
             <a href="#">
-              <img src="./img/list.svg" alt="填寫表單">
+              <img src="./img/list.svg" alt="填寫表單" />
               <p class="fs-5">填寫表單</p>
             </a>
           </li>
-          <li class="border-1-primary-400 mb-6 btn">
+          <li class="border-1-primary-400 mb-6 footer-btn">
             <a href="#">
-              <img src="./img/instagram.svg" alt="hexschool_demo">
+              <img src="./img/instagram.svg" alt="hexschool_demo" />
               <p class="fs-5">hexschool_demo</p>
             </a>
           </li>
-          <li class="border-1-primary-400 mb-6 btn">
+          <li class="border-1-primary-400 mb-6 footer-btn">
             <a href="#">
-              <img src="./img/facebook.svg" alt="hexschoolTW">
+              <img src="./img/facebook.svg" alt="hexschoolTW" />
               <p class="fs-5">hexschoolTW</p>
             </a>
           </li>
         </ul>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./JS/all.js"></script>
   </body>
 </html>
